@@ -4,12 +4,12 @@
 <!ELEMENT complexes (complex+)>
 <!ELEMENT lessons (lesson+)>
 <!ELEMENT lesson (date, time)>
-<!ELEMENT cpmplex (name, address)>
+<!ELEMENT complex (name, address)>
 <!ELEMENT date (#PCDATA)>
 <!ELEMENT time (#PCDATA)>
 <!ELEMENT name (#PCDATA)>
 <!ELEMENT address (#PCDATA)>
-<!ATTLIST complex id ID #REDQUIRED>
+<!ATTLIST complex id ID #REQUIRED>
 <!ATTLIST lesson
   code CDATA #REQUIRED
   complex IDREF #REQUIRED
@@ -18,20 +18,20 @@
 
 <timeTable>
   <complexes>
-  <complexe id=""P001">
+  <complex id="P001">
     <name>
     Тех отдел
     </name>
     <address>
     Дом 5 улц 6
     </address>
-  </complexe>
+  </complex>
   </complexes>
 <lessons>
-      <lesson code=""001" complex=""P001">
-        <data>
+      <lesson code="001" complex="P001">
+        <date>
         31 декабря 025
-        </data>
+        </date>
         <time>
         20:00
         </time>
