@@ -2,14 +2,14 @@
 <!DOCTYPE timeTable [
   <!ELEMENT timeTable (complexes+, lessons+)>
 <!ELEMENT complexes (complex+)>
-<!ELEMENT lesson (lesson+)>
+<!ELEMENT lessons (lesson+)>
 <!ELEMENT lesson (date, time)>
 <!ELEMENT cpmplex (name, address)>
 <!ELEMENT date (#PCDATA)>
 <!ELEMENT time (#PCDATA)>
 <!ELEMENT name (#PCDATA)>
 <!ELEMENT address (#PCDATA)>
-<!ATTLIST complex ID #REDQUID>
+<!ATTLIST complex id ID #REDQUIRED>
 <!ATTLIST lesson
   code CDATA #REQUIRED
   complex IDREF #REQUIRED
